@@ -11,7 +11,7 @@
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: @navbar-margin-bottom;
+  margin-bottom: 0;
   border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
@@ -53,6 +53,7 @@
   padding-left:  @navbar-padding-horizontal;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  background: @navbar-default-toggle-hover-bg;
   &:extend(.clearfix all);
   -webkit-overflow-scrolling: touch;
 
@@ -150,7 +151,7 @@
 }
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
+  border-width: 0;
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -164,9 +165,11 @@
 .navbar-brand {
   float: left;
   padding: @navbar-padding-vertical @navbar-padding-horizontal;
-  font-size: @font-size-large;
+  font-size: @font-size-h3;
+  font-family: @font-family-serif;
   line-height: @line-height-computed;
   height: @navbar-height;
+  margin-top:8px;
 
   &:hover,
   &:focus {
@@ -194,12 +197,11 @@
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: @navbar-padding-horizontal;
-  padding: 9px 10px;
-  .navbar-vertical-align(34px);
+  padding: 24px 20px;
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 0;
+  border-left: 1px solid transparent;
   border-radius: @border-radius-base;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
@@ -211,12 +213,12 @@
   // Bars
   .icon-bar {
     display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
+    width: 28px;
+    height: 3px;
+    border-radius: 0;
   }
   .icon-bar + .icon-bar {
-    margin-top: 4px;
+    margin-top: 5px;
   }
 
   @media (min-width: @grid-float-breakpoint) {

@@ -34,13 +34,14 @@
   "dependencies": {
     "jquery": ">= 1.9.0"
   },
-  "_release": "3a37633c45",
+  "_release": "362c316661",
   "_resolution": {
     "type": "branch",
-    "branch": "citizendesk-dist",
-    "commit": "3a37633c45dcb235f1ec7f248c3d43a377d1e60d"
+    "branch": "citizendesk-ui",
+    "commit": "362c316661816c4d60a346f4b7e4da8fb7f710c3"
   },
   "_source": "https://github.com/sourcefabric-innovation/bootstrap.git",
-  "_target": "citizendesk-dist",
-  "_originalSource": "https://github.com/sourcefabric-innovation/bootstrap.git"
+  "_target": "citizendesk-ui",
+  "_originalSource": "https://github.com/sourcefabric-innovation/bootstrap.git",
+  "_direct": true
 }
