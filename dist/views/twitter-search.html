@@ -18,7 +18,7 @@
         <span class="fa fa-refresh fa-spin"></span>
         <span translate>Deleting</span>
       </button>
-      <button class="btn btn-warning btn-xs" ng-switch-default ng-click="delete()">
+      <button class="btn btn-warning btn-xs" ng-switch-default ng-click="delete()" ng-disabled="!queue">
         <span class="glyphicon glyphicon-trash"></span>
         <span translate>Delete search</span>
       </button>
