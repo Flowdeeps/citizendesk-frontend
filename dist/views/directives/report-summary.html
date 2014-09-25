@@ -1,9 +1,9 @@
 <div data-id="{{report._id}}" class="panel panel-default">
   <div class="panel-heading clearfix">
     <h5>
-      <a ng-bind="report.authors[0].identifiers.user_name" ng-href="#/citizen-card/{{report.authors[0].authority}}/{{report.authors[0].identifiers.user_name}}"></a>
+      <report-author author="report.authors[0]">
       <small ng-bind="report.produced | date:'medium'"></small>
-    </h5>
+    </report-author></h5>
   </div>
   <div class="panel-body break-long-words" ng-bind="report.texts[0].original"></div>
   <div class="panel-footer clearfix">
